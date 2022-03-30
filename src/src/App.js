@@ -1,10 +1,17 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [text, setText] = useState("");
+
+  function changeTextHandler(event) {
+    setText(event.target.value);
+  }
+
   return (
     <>
       <h1>Texto</h1>
-      <textarea></textarea>
+      <textarea onChange={changeTextHandler} value={text}></textarea>
     </>
   );
 }
