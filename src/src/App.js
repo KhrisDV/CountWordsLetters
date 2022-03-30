@@ -12,12 +12,18 @@ function App() {
 
   return (
     <>
-      <h1>Contador de letras y palabras</h1>
-      <textarea onChange={changeTextHandler} value={text} />
-
-      <Letras text={text} />
-
-      <Palabras text={text} />
+      <div id="maincontainer">
+        <h1>Contador de letras y palabras</h1>
+        <textarea id="areatext" onChange={changeTextHandler} value={text} />
+        <div id="contadores">
+          <div id="contletras">
+            <Letras text={text} />
+          </div>
+          <div id="contpalabras">
+            <Palabras text={text} />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,41 @@
+#maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(130, 71, 140);
+}
+
+#areatext {
+  background-color: rgb(160, 113, 168);
+  padding: 15px;
+  font-size: 20px;
+  height: 300px;
+  width: 600px;
+}
+
+#contadores {
+  display: flex;
+  flex-direction: row;
+}
+
+#contletras {
+  color: lightslategray;
+  background-color: rgb(101, 39, 112);
+  text-align: center;
+  width: 250px;
+  border: 3px solid black;
+  margin: 50px;
+  font-size: 30px;
+}
+
+#contpalabras {
+  color: lightslategray;
+  background-color: rgb(101, 39, 112);
+  text-align: center;
+  width: 250px;
+  border: 3px solid black;
+  margin: 50px;
+  font-size: 30px;
+}
