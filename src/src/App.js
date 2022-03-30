@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Letras from "./Components/Letras/Letras.jsx";
 import "./App.css";
+import Letras from "./Components/Letras/Letras.jsx";
+import Palabras from "./Components/Palabras/Palabras.jsx";
 
 function App() {
   const [text, setText] = useState("");
@@ -13,9 +14,10 @@ function App() {
     <>
       <h1>Texto</h1>
       <textarea onChange={changeTextHandler} value={text}></textarea>
-      <p>
-        <Letras text={text} />
-      </p>
+
+      <Letras text={text} />
+
+      <Palabras text={text} />
     </>
   );
 }
