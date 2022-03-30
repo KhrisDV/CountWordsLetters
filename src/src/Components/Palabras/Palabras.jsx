@@ -1,10 +1,10 @@
 function Palabras ({text}) {
 
-    const nPalabras = text.split(" ");
+    const nPalabras = text.split(" ").filter(string => string !=="");
 
     return (
 
-        <p>Total de palabras: {nPalabras.length}</p>
+        <p>Nº palabras: {nPalabras.length}</p>
     );
 }
 

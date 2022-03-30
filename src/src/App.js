@@ -12,8 +12,8 @@ function App() {
 
   return (
     <>
-      <h1>Texto</h1>
-      <textarea onChange={changeTextHandler} value={text}></textarea>
+      <h1>Contador de letras y palabras</h1>
+      <textarea onChange={changeTextHandler} value={text} />
 
       <Letras text={text} />
 
