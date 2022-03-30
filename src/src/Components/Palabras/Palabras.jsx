@@ -1,6 +1,6 @@
 function Palabras ({text}) {
 
-    const nPalabras = text.split(" ").filter(string => string !=="");
+    const nPalabras = text.split(" ").filter(string => string !=="" && string !== "\n" );
 
     return (
 
